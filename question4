@@ -1,0 +1,22 @@
+<script>
+let person = {
+    firstName: 'Gunjan',
+    lastName: 'Sharma',
+    address: {
+        street: 'pul pehladpur',
+        city: 'delhi',
+        state: 'delhi',
+        country: 'India'
+    }
+};
+
+
+let copiedPerson = Object.assign({}, person);
+
+copiedPerson.firstName = 'kriti'; 
+
+copiedPerson.address.street = 'Amphitheatre Parkway'; 
+copiedPerson.address.city = 'jaipur'; 
+
+console.log(copiedPerson);
+</script>
